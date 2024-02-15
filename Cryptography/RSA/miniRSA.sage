@@ -6,10 +6,10 @@ ctr = 0
 def invpow(x,n):
     global high
     while pow(high,n) <= x:
-        high *= 2
-    low = high/2
+        high = high << 1
+    low = high >> 1
     while low < high:
-        mid = (int)((low + high) // 2)
+        mid = (low + high) >> 1
         if low < mid and pow(mid,n) < x:
             low = mid
         elif high > mid and pow(mid,n) > x:
@@ -31,7 +31,7 @@ def num2str(num):
     return s
 
 while True:
-	tup=invpow(ct,3)
+	tup=invpow(ct,e)
 	if tup[1]:
 		print(num2str(tup[0]))
 		break
