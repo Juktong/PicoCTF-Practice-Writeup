@@ -4,4 +4,4 @@ In the RSA encryption scheme, the relationship between ciphertext ($ct$) and pla
 The implementation details can be found in the [miniRSA.sage](https://github.com/Juktong/PicoCTF-Practice-Writeup/blob/main/Cryptography/RSA/miniRSA.sage) file.
 
 Reference:
-(To be Finished)
+1. num2str function: https://github.com/DuanYuFi/CTF_Crypto-all-in-one
