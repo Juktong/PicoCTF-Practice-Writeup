@@ -1,6 +1,10 @@
-## Method 1
+# Sum-O-Primes
 
-Known Parameter: $X=p+q$, $N=p * q$, Encryption Key: $e=65537$, Ciphertext
+Source: https://play.picoctf.org/practice/challenge/310?category=2&page=5
+
+Known RSA Parameter: $X=p+q$, $N=p * q$, Encryption Key: $e=65537$, Ciphertext
+
+### Method 1
 
 Knowing $x=p+q$ and $n=p*q$, we can calculate $p-q$ by $(p-q)^2=(p+q)^2-4pq$.
 
